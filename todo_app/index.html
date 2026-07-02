@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Daily Ledger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="book">
+  <header>
+    <p class="eyebrow">Entry no. —</p>
+    <h1>The Daily Ledger</h1>
+    <p class="date" id="dateLine"></p>
+  </header>
+
+  <div class="entry-row">
+    <input type="text" id="taskInput" placeholder="Record a new task…" maxlength="200" autocomplete="off">
+    <button id="addBtn">Add</button>
+  </div>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="active">Open</button>
+    <button class="filter-btn" data-filter="done">Settled</button>
+  </div>
+
+  <ul class="list" id="list"></ul>
+
+  <footer>
+    <span id="countLine">loading…</span>
+    <button id="clearDone">Clear settled</button>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
